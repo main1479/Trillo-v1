@@ -1,0 +1,84 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+:root{
+    --main-color1: #FF3366;
+    --main-color2: #eb2f64;
+    --main-color3: #BA265D;
+
+    --color-light1: #faf9f9;
+    --color-light2: #f4f2f2;
+    --color-light3: #f0eeee;
+    --color-light4: #ccc;
+
+    --color-dark1: #333;
+    --color-dark2: #777;
+    --color-dark3: #999;
+    --line1:1px solid var(--color-light2);
+}
+// ======================================================
+// sass variables
+// ======================================================
+$bp-1200:1200px;
+$bp-1024:1024px;
+$bp-768:768px;
+$bp-600:600px;
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    @media only screen and (max-width:$bp-1024) {
+        font-size: 55%;
+    }
+    @media only screen and (max-width:$bp-768) {
+        font-size: 50%;
+    }
+}
+  
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom,var(--main-color2),var(--main-color3));
+    font-size: 1.6rem;
+    color:var(--color-dark2);
+    line-height: 1.6;
+    font-weight: 400;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}   
+
+
+
+
+
+

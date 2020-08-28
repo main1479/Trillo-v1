@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+
+ <!-- "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+ "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+ "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+ "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+ "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css" -->
+
+
+    <div class="container">
+        <header class="header">
+            <a href="#">
+                <img src="img/logo.png" alt="trillo" class="logo" title="Trillo">
+            </a>
+
+            <form action="#" class="search">
+                <input type="text" class="search-input" placeholder="Search Hotels">
+                <button class="search-button">
+                   <svg class="search-icon">
+                       <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                   </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav-icon-box">
+                    <svg class="user-nav-icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav-notification">9</span>
+                </div>
+                <div class="user-nav-icon-box">
+                    <svg class="user-nav-icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav-notification">14</span>
+                </div>
+                <div class="user-nav-user">
+                    <img src="img/user.jpg" alt="user" class="user-nav-user-photo">
+                    <span class="user-nav-user-name">Mainul</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav-item">
+                        <a href="#" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="#" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="#" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>car rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="#" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; by Trillo. 2020 All right reserved.
+                </div>
+            </nav>
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <img src="img/hotel-1.jpg" alt="photo of hotel 1" class="gallery-photo">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/hotel-2.jpg" alt="photo of hotel 2" class="gallery-photo">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/hotel-3.jpg" alt="photo of hotel 3" class="gallery-photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview-heading">
+                        hotel las palmas
+                    </h1>
+                    <div class="overview-stars">
+                        <svg class="overview-icon-star overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-icon-star overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-icon-star overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-icon-star overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-icon-star overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <div class="overview-location">
+                        <svg class="overview-icon-location overview-icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Albufeira, Portugal</button>
+                    </div>
+
+                    <div class="overview-rating">
+                        <div class="overview-rating-average">8.9</div>
+                        <div class="overview-rating-count">890 votes</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe.
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                        </p>
+                        <p class="paragraph">
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid
+                            aliquam.
+                        </p>
+                        <ul class="list">
+                            <li class="list-item">Close to the beach</li>
+                            <li class="list-item">Free airport shuttle</li>
+                            <li class="list-item">Air conditioning and heating</li>
+                            <li class="list-item">We speak all languages</li>
+                            <li class="list-item">Breakfast included</li>
+                            <li class="list-item">Free wifi in all rooms</li>
+                            <li class="list-item">Pets allowed</li>
+                            <li class="list-item">Perfect for families</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend-count">
+                                Saad and 3 other friends recommend this hotel.
+                            </p>
+                            <div class="recommend-friends">
+                                <img src="img/user-3.jpg" alt="" class="recommend-photo">
+                                <img src="img/user-4.jpg" alt="" class="recommend-photo">
+                                <img src="img/user-5.jpg" alt="" class="recommend-photo">
+                                <img src="img/user-6.jpg" alt="" class="recommend-photo">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="user-review">
+                        <figure class="review">
+                            <blockquote class="review-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia
+                                ex.
+                            </blockquote>
+                            <figcaption class="review-user">
+                                <img src="img/user-1.jpg" alt="" class="review-photo">
+                                <div class="review-user-box">
+                                    <p class="review-user-name">Saad</p>
+                                    <p class="review-user-date">Feb 23rd, 2019</p>
+                                </div>
+                                <div class="review-rating">8.9</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                            </blockquote>
+                            <figcaption class="review-user">
+                                <img src="img/user-4.jpg" alt="" class="review-photo">
+                                <div class="review-user-box">
+                                    <p class="review-user-name">Mainul Islam</p>
+                                    <p class="review-user-date">Sept 17th, 2020</p>
+                                </div>
+                                <div class="review-rating">9.5</div>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-inline">Show more <span>&rarr;</span></button>
+                    </div>
+                </div>
+                <div class="cta">
+                    <h2 class="cta-book-now">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</h2>
+                    <button class="btn">
+                        <span class="btn-visible">book now</span>
+                        <span class="btn-invisible">only 4 rooms left</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
